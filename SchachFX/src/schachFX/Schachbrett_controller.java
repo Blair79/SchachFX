@@ -176,9 +176,6 @@ public class Schachbrett_controller {
 			if ((ImageView) event.getGestureSource() instanceof ImageView)
 				zielfeld = (Pane) event.getGestureTarget();
 
-			// der Schlagschatten der Figur wird entfernt
-			figur.setEffect(null);
-
 			// Anzeige des von Quell- und Zielfeld auf der Konsole zu Debug
 			// zwecken
 			System.out.println(quellfeld + " drop " + zielfeld);
@@ -225,6 +222,8 @@ public class Schachbrett_controller {
 			if (quellfeld.getEffect() != null)
 				quellfeld.setEffect(null);
 
+			// der Schlagschatten der Figur wird entfernt
+			figur.setEffect(null);
 			// Reinitialisierung aller Klassenvariablen
 			figur = new ImageView();
 			quellfeld = new Pane();
