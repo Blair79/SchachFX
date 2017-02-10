@@ -1,15 +1,20 @@
 package schachFX;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class Schach extends Application {
 
+	// Fenster
+	Stage primaryStage;
+	// Fensterinhalt
 	Scene scene;
 
 	public static void main(String[] args) {
@@ -17,23 +22,51 @@ public class Schach extends Application {
 	}
 
 	@Override
-	public void start(Stage stage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("Schachbrett.fxml"));
-		scene = new Scene(root);
+	public void start(Stage primaryStage) throws Exception {
 
-		// Hinzufügen des Eventfilters, um alle Möglichkeiten des DragDetect
-		// Eventhandlers zu nutzen.
-		scene.addEventFilter(MouseEvent.DRAG_DETECTED, new EventHandler<MouseEvent>() {
-			@Override
-			public void handle(MouseEvent mouseEvent) {
-				scene.startFullDrag();
-			}
-		});
+		this.primaryStage = primaryStage;
 
-		stage.setTitle("Schach");
-		stage.setScene(scene);
-		stage.setResizable(false);
-		stage.show();
+		mainWindow();
+
+	}
+
+	public void mainWindow() {
+
+		try {
+
+			// View wird geladen
+			FXMLLoader loader = new FXMLLoader(Schach.class.getResource("Schachbrett.fxml"));
+			BorderPane pane = loader.load();
+
+			// Attribute der Primary Stage werden gesetzt
+			primaryStage.setTitle("Schach");
+			primaryStage.setResizable(false);
+
+			// Controller wird geladen
+			Schachbrett_controller schachbrett_controller = loader.getController();
+			schachbrett_controller.setMain(this);
+
+			// Scene wird instanziiert
+			scene = new Scene(pane);
+
+			// Hinzufügen des Eventfilters, um alle Möglichkeiten des DragDetect
+			// Eventhandlers zu nutzen.
+			scene.addEventFilter(MouseEvent.DRAG_DETECTED, new EventHandler<MouseEvent>() {
+				@Override
+				public void handle(MouseEvent mouseEvent) {
+					scene.startFullDrag();
+				}
+			});
+
+			// Scene wid der Stage zugeordnet
+			primaryStage.setScene(scene);
+			// Stage wird angezeigt
+			primaryStage.show();
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

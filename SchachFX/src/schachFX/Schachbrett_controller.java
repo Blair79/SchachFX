@@ -14,8 +14,12 @@ import javafx.scene.input.Dragboard;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TransferMode;
 import javafx.scene.layout.Pane;
+import schachFX.Spiel;
 
 public class Schachbrett_controller {
+
+	private Schach schach;
+	private Spiel spiel = new Spiel(this);
 
 	// FXML Variablen:
 	// Für die Textausgabe auf der Textarea.
@@ -35,6 +39,7 @@ public class Schachbrett_controller {
 
 	// Ist der Bewegungsvorgang gestartet worden?
 	private boolean bewegeFigur = false;
+
 	// Das Feld aus dem die Figur gelöscht werden soll.
 	private Pane quellfeld = new Pane();
 	// Das Feld über dem sich der Bewegungsvorgang gerade befindet.
@@ -48,6 +53,10 @@ public class Schachbrett_controller {
 	private Point2D aktuelleposition = new Point2D(0, 0);
 	// Der Punkt an dem der Bewegungsvorgang beendet wurde.
 	private Point2D endpunkt = new Point2D(0, 0);
+
+	public void setMain(Schach schach) {
+		this.schach = schach;
+	}
 
 	// FXML Funktionen:
 	// Eine Figur bemerkt, das sie bewegt werden soll.
@@ -207,16 +216,18 @@ public class Schachbrett_controller {
 			// Zuweisung (ausgelöst durch ein verlassen des Mauscursors aus dem
 			// gültigen Schachbrett) die Ausführung der folgenden IF-Abfrage zu
 			// verhindern.
-			zielfeld = quellfeld;
+			// zielfeld = quellfeld;
+			// Unnötig da folgende Abfrage obsolet
 
 			// Anzeige des von Quell- und Zielfeld auf der Konsole zu Debug
 			// Zwecken.
-			System.out.println(quellfeld + " done " + zielfeld);
+			// System.out.println(quellfeld + " done " + zielfeld);
 
 			// Sollten Quellfeld und Zielfeld ungleich sein, die Figur aus dem
 			// Quellfeld entfernen.
-			if ((quellfeld != zielfeld))
-				quellfeld.getChildren().remove(figur);
+			// if ((quellfeld != zielfeld))
+			// quellfeld.getChildren().remove(figur);
+			// Unnötig da Implizit
 
 			// Sollte das Startfeld mit einem InnerenSchatten markiert sein,
 			// diese Markierung entfernen.
