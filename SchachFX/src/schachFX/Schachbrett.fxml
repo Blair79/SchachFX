@@ -36,383 +36,383 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="64.0" prefWidth="64.0" stylesheets="@Schachbrett.css" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                  <Pane id="A1" fx:id="a1" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="64.0" prefWidth="64.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Turm_w_l" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Turm_w.png" />
+                              <Image url="@../assets/Turm_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                  <Pane id="B1" fx:id="b1" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="7">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Springer_w_l" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Springer_w.png" />
+                              <Image url="@../assets/Springer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                  <Pane id="C1" fx:id="c1" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="7">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Laeufer_w_l" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Laeufer_w.png" />
+                              <Image url="@../assets/Laeufer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                     <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <Pane id="D1" fx:id="d1" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="7">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="4.0" layoutY="5.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Dame_w" fitHeight="64.0" fitWidth="64.0" layoutX="4.0" layoutY="5.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Dame_w.png" />
+                              <Image url="@../assets/Dame_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                  <Pane id="E1" fx:id="e1" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="7">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="4.0" layoutY="5.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Koenig_w" fitHeight="64.0" fitWidth="64.0" layoutX="4.0" layoutY="5.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Koenig_w.png" />
+                              <Image url="@../assets/Koenig_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                  <Pane id="F1" fx:id="f1" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="7">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Laeufer_w_r" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Laeufer_w.png" />
+                              <Image url="@../assets/Laeufer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
-                     </children></Pane><Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                     </children></Pane><Pane id="G1" fx:id="g1" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="7">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Springer_w_r" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Springer_w.png" />
-                           </image>
-                           <cursor>
-                              <Cursor fx:constant="MOVE" />
-                           </cursor>
-                        </ImageView>
-                     </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
-                     <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
-                           <image>
-                              <Image url="@/assets/Turm_w.png" />
+                              <Image url="@../assets/Springer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css">
+                  <Pane id="H1" fx:id="h1" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Turm_w_r" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Turm_s.png" />
+                              <Image url="@../assets/Turm_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="1">
+                  <Pane id="A8" fx:id="a8" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Turm_s_l" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Springer_s.png" />
+                              <Image url="@../assets/Turm_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="3">
+                  <Pane id="B8" fx:id="b8" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Springer_s_l" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Dame_s.png" />
+                              <Image url="@../assets/Springer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="5">
+                  <Pane id="D8" fx:id="d8" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="3">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Dame_s" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Laeufer_s.png" />
+                              <Image url="@../assets/Dame_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="7">
+                  <Pane id="F8" fx:id="f8" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="5">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Laeufer_s_r" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Turm_s.png" />
+                              <Image url="@../assets/Laeufer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.rowIndex="1">
+                  <Pane id="H8" fx:id="h8" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="7">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Turm_s_r" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_s.png" />
+                              <Image url="@../assets/Turm_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <Pane id="A7" fx:id="a7" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_s_1" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_s.png" />
+                              <Image url="@../assets/Bauer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                  <Pane id="C7" fx:id="c7" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_s_3" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_s.png" />
+                              <Image url="@../assets/Bauer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                  <Pane id="E7" fx:id="e7" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_s_5" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_s.png" />
+                              <Image url="@../assets/Bauer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.rowIndex="3" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.rowIndex="5" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                  <Pane id="G7" fx:id="g7" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_s_7" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_w.png" />
+                              <Image url="@../assets/Bauer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                  <Pane id="B6" fx:id="b6" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Pane id="D6" fx:id="d6" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Pane id="F6" fx:id="f6" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Pane id="H6" fx:id="h6" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <Pane id="A5" fx:id="a5" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.rowIndex="3" />
+                  <Pane id="C5" fx:id="c5" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Pane id="E5" fx:id="e5" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Pane id="G5" fx:id="g5" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <Pane id="B4" fx:id="b4" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Pane id="D4" fx:id="d4" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Pane id="F4" fx:id="f4" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Pane id="H4" fx:id="h4" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                  <Pane id="A3" fx:id="a3" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.rowIndex="5" />
+                  <Pane id="C3" fx:id="c3" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Pane id="E3" fx:id="e3" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Pane id="G3" fx:id="g3" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <Pane id="B2" fx:id="b2" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="6">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_w_2" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_w.png" />
+                              <Image url="@../assets/Bauer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                  <Pane id="D2" fx:id="d2" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="6">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_w_4" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_w.png" />
+                              <Image url="@../assets/Bauer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Schwarz" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                  <Pane id="F2" fx:id="f2" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="6">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_w_6" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_w.png" />
+                              <Image url="@../assets/Bauer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="2">
+                  <Pane id="H2" fx:id="h2" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Schwarz" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="6">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_w_8" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Laeufer_s.png" />
+                              <Image url="@../assets/Bauer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="4">
+                  <Pane id="C8" fx:id="c8" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="2">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Laeufer_s_l" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Koenig_s.png" />
+                              <Image url="@../assets/Laeufer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="6">
+                  <Pane id="E8" fx:id="e8" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="4">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Koenig_s" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Springer_s.png" />
+                              <Image url="@../assets/Koenig_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                  <Pane id="G8" fx:id="g8" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="6">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Springer_s_r" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_s.png" />
+                              <Image url="@../assets/Springer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                  <Pane id="H7" fx:id="h7" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_s_8" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_s.png" />
+                              <Image url="@../assets/Bauer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <Pane id="F7" fx:id="f7" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_s_6" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_s.png" />
+                              <Image url="@../assets/Bauer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Pane id="D7" fx:id="d7" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_s_4" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_s.png" />
+                              <Image url="@../assets/Bauer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.rowIndex="2" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.rowIndex="4" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.rowIndex="6">
+                  <Pane id="B7" fx:id="b7" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_s_2" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_w.png" />
+                              <Image url="@../assets/Bauer_s.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                  <Pane id="A6" fx:id="a6" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.rowIndex="2" />
+                  <Pane id="C6" fx:id="c6" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Pane id="E6" fx:id="e6" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Pane id="G6" fx:id="g6" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                  <Pane id="H5" fx:id="h5" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <Pane id="F5" fx:id="f5" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Pane id="D5" fx:id="d5" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Pane id="B5" fx:id="b5" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Pane id="A4" fx:id="a4" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.rowIndex="4" />
+                  <Pane id="C4" fx:id="c4" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Pane id="E4" fx:id="e4" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Pane id="G4" fx:id="g4" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                  <Pane id="H3" fx:id="h3" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                  <Pane id="F3" fx:id="f3" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Pane id="D3" fx:id="d3" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Pane id="B3" fx:id="b3" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Pane id="A2" fx:id="a2" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.rowIndex="6">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_w_1" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_w.png" />
+                              <Image url="@../assets/Bauer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                  <Pane id="C2" fx:id="c2" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="2" GridPane.rowIndex="6">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_w_3" fitHeight="64.0" fitWidth="64.0" layoutX="5.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_w.png" />
+                              <Image url="@../assets/Bauer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
                            </cursor>
                         </ImageView>
                      </children></Pane>
-                  <Pane id="Weiss" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                  <Pane id="E2" fx:id="e2" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="4" GridPane.rowIndex="6">
                      <children>
-                        <ImageView fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                        <ImageView id="Bauer_w_5" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
                            <image>
-                              <Image url="@/assets/Bauer_w.png" />
+                              <Image url="@../assets/Bauer_w.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="MOVE" />
+                           </cursor>
+                        </ImageView>
+                     </children></Pane>
+                  <Pane id="G2" fx:id="g2" onDragDone="#onDragDone" onDragDropped="#onDragDropped" onDragEntered="#onDragEntered" onDragExited="#onDragExited" onDragOver="#onDragOver" prefHeight="200.0" prefWidth="200.0" styleClass="Weiss" stylesheets="@Schachbrett.css" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                     <children>
+                        <ImageView id="Bauer_w_7" fitHeight="64.0" fitWidth="64.0" layoutX="6.0" layoutY="4.0" onDragDetected="#onDragDetected" pickOnBounds="true" preserveRatio="true" styleClass="Schachbrett.css">
+                           <image>
+                              <Image url="@../assets/Bauer_w.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="MOVE" />
@@ -432,7 +432,7 @@
                   </Pane>
                   <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="598.0" prefViewportWidth="196.0" SplitPane.resizableWithParent="false">
                      <content>
-                        <TextArea editable="false" />
+                        <TextArea fx:id="notation" editable="false" />
                      </content>
                   </ScrollPane>
                </items>
@@ -445,6 +445,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
+                  <MenuItem mnemonicParsing="false" onAction="#neuesSpiel" text="Neues Spiel" />
               <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
@@ -464,7 +465,7 @@
    <bottom>
       <ScrollPane fitToHeight="true" fitToWidth="true" prefViewportHeight="200.0" prefViewportWidth="800.0">
          <content>
-            <TextArea fx:id="actiontarget" BorderPane.alignment="CENTER" />
+            <TextArea fx:id="statusAusgabe" BorderPane.alignment="CENTER" />
          </content>
       </ScrollPane>
    </bottom>

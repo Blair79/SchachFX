@@ -1,15 +1,15 @@
-#Schwarz {
+.Schwarz {
    -fx-background-color: grey;
 }
 
-#Schwarz:hover {
+.Schwarz:hover {
    -fx-background-color: blue;
 }
 
-#Weiss {
+.Weiss {
    -fx-background-color: aliceblue;
 }
 
-#Weiss:hover {
+.Weiss:hover {
    -fx-background-color: blue;
 }
