@@ -640,7 +640,7 @@ public class Schachbrett_controller {
 			// der Bewegungsvorgang ist beendet worden
 			bewegeFigur = false;
 			// TODO Computerspieler starten
-			// spiel.ziehe("E7","E6");
+			//spiel.ziehe("E7","E6");
 		}
 
 		// event.consume(); ??

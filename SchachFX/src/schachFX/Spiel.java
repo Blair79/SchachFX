@@ -37,7 +37,7 @@ public class Spiel {
 		switch (figur.substring(0, figur.indexOf('_'))) {
 		case "Bauer":
 
-			ergebnis = linksRauf(quelle, 1, richtung);
+			ergebnis = ergebnis + linksRauf(quelle, 1, richtung);
 			ergebnis = ergebnis + (rauf(quelle, 1, richtung));
 			if ((quelle.charAt(1) == '2') || (quelle.charAt(1) == '7'))
 				ergebnis = ergebnis + (rauf(quelle, 2, richtung));
@@ -45,17 +45,30 @@ public class Spiel {
 
 			erlaubt = ergebnis.contains(ziel);
 
-			// System.out.println(ergebnis);
+			 System.out.println(ergebnis);
 			break;// 3 Richtungen 4 Felder
 		case "Turm":
-			//TODO Umkehr
-			if (quelle.charAt(1)>ziel.charAt(1));
-			int j=1;
-			for (int i = quelle.charAt(1); i < ziel.charAt(1); i++) {
-				System.out.println("test");
-				ergebnis = ergebnis + rauf(quelle, j++, richtung);
+			if (quelle.charAt(1) < ziel.charAt(1)) {
+				int anzahl = 1;
+				for (int i = quelle.charAt(1); i < ziel.charAt(1); i++) {
+					ergebnis = ergebnis + rauf(quelle, anzahl++, richtung);
+				}
+				anzahl = 1;
+				for (int i = quelle.charAt(1); i < ziel.charAt(1); i++) {
+					ergebnis = ergebnis + rauf(quelle, anzahl++, !richtung);
+				}
 			}
-			
+			if (quelle.charAt(1) > ziel.charAt(1)) {
+				int anzahl = 1;
+				for (int i = quelle.charAt(1); i > ziel.charAt(1); i--) {
+					ergebnis = ergebnis + rauf(quelle, anzahl++, richtung);
+				}
+				anzahl = 1;
+				for (int i = quelle.charAt(1); i > ziel.charAt(1); i--) {
+					ergebnis = ergebnis + rauf(quelle, anzahl++, !richtung);
+				}
+			}
+
 			erlaubt = ergebnis.contains(ziel);
 			System.out.println(ergebnis);
 			break;// 4 Richtungen
@@ -81,18 +94,18 @@ public class Spiel {
 	private String rauf(String quelle, int anzahl, boolean richtung) {
 		char hilfsPosX = quelle.charAt(0);
 		int hilfsPosY = quelle.charAt(1);
-		int i = 7;
+		//int ausgangsstellung = 7;
 		if (!richtung) {
-			i = 2;
+			//ausgangsstellung = 2;
 			anzahl *= -1;
 		}
 
 		String ergebnis = "";
 		// Rauf
-		if (hilfsPosY != i) {
+		//if (hilfsPosY != ausgangsstellung) {
 			hilfsPosY += anzahl - 48;
-			ergebnis = ergebnis + hilfsPosX + hilfsPosY;
-		}
+				ergebnis = ergebnis + hilfsPosX + hilfsPosY;
+		//}
 
 		return ergebnis;
 
@@ -101,9 +114,9 @@ public class Spiel {
 	private String linksRauf(String quelle, int anzahl, boolean richtung) {
 		char hilfsPosX = quelle.charAt(0);
 		int hilfsPosY = quelle.charAt(1);
-		int i = 7;
+		int ausgangsstellung = 7;
 		if (!richtung) {
-			i = 2;
+			ausgangsstellung = 2;
 			anzahl *= -1;
 		}
 
@@ -112,7 +125,7 @@ public class Spiel {
 		if ((hilfsPosX != 'A')) {
 
 			hilfsPosX -= (char) Math.abs(anzahl);//
-			if (hilfsPosY != i)
+			if (hilfsPosY != ausgangsstellung)
 				hilfsPosY += anzahl - 48;
 			ergebnis = ergebnis + hilfsPosX + hilfsPosY;
 
@@ -124,9 +137,9 @@ public class Spiel {
 
 	private String rechtsRauf(char hilfsPosX, int hilfsPosY, int anzahl, boolean richtung) {
 
-		int i = 7;
+		int ausgangsstellung = 7;
 		if (!richtung) {
-			i = 2;
+			ausgangsstellung = 2;
 			anzahl *= -1;
 		}
 
@@ -134,7 +147,7 @@ public class Spiel {
 		// Rechts rauf
 		if ((hilfsPosX != 'H')) {
 			hilfsPosX += (char) 1;//
-			if (hilfsPosY != i)
+			if (hilfsPosY != ausgangsstellung)
 				hilfsPosY += anzahl - 48;
 			ergebnis = ergebnis + hilfsPosX + hilfsPosY;
 		}
