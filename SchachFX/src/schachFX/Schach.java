@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -41,6 +42,9 @@ public class Schach extends Application {
 			// Attribute der Primary Stage werden gesetzt
 			primaryStage.setTitle("Schach");
 			primaryStage.setResizable(false);
+			
+			// Set the application icon.
+		    this.primaryStage.getIcons().add(new Image("file:resources/images/Chess-Game.png"));
 
 			// Controller wird geladen
 			Schachbrett_controller schachbrett_controller = loader.getController();

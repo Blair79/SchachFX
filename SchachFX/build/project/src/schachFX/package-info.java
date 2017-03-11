@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * @author ColBl
+ *
+ */
+package schachFX;
