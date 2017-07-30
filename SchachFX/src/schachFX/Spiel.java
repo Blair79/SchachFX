@@ -1,158 +1,141 @@
 package schachFX;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.BitSet;
+
 public class Spiel {
 	private Schachbrett_controller schachbrett_controller;
+	private BitBoard bitboard = new BitBoard();
 
 	public Spiel(Schachbrett_controller schachbrett_controller) {
 		this.schachbrett_controller = schachbrett_controller;
 	}
 
-	public void notiere(String quelle, String ziel) {
+	public void notiere(int quelle, int ziel) {
 		// TODO Speichern der Notation
 		// System.out.println(quelle+","+ziel);
 	}
 
-	public void ziehe(String quelle, String ziel) {
-		schachbrett_controller.ziehe(quelle, ziel);
-	}
+	/*
+	 * public void ziehe(String quelle, String ziel) {
+	 * schachbrett_controller.ziehe(quelle, ziel); }
+	 */
 
-	public boolean istZugerlaubt(String figur, String quelle, String ziel) {
+	public boolean istZugerlaubt(String figur, String zielfarbe, int quelle, int ziel) {
 
-		System.out.println(figur + " " + quelle + " " + ziel);
+		System.out.println(figur + " " + quelle + " " + ziel + " " + zielfarbe);
 
-		// true = rauf, false = runter
-		boolean richtung;
+		boolean grundlinie = false;
 		boolean erlaubt = false;
 
-		if (figur.contains("_w"))
-			richtung = true;
-		else
-			richtung = false;
-		System.out.println(richtung);
+		int differenz = Math.abs(ziel - quelle);
 
-		String ergebnis = "";
-		char hilfsPosX = quelle.charAt(0);
-		int hilfsPosY = quelle.charAt(1);
-		// TODO Spielregeln
-		switch (figur.substring(0, figur.indexOf('_'))) {
+		String figurname = figur.substring(0, figur.indexOf('_'));
+		boolean figurfarbe = figur.contains("_w");
+
+		switch (figurname) {
 		case "Bauer":
+			System.out.println("Bauer " + Arrays.toString(bitboard.berechneBauer(quelle, figurfarbe)));
+			bitboard.ausgeben(figurname, figurfarbe);
 
-			ergebnis = ergebnis + linksRauf(quelle, 1, richtung);
-			ergebnis = ergebnis + (rauf(quelle, 1, richtung));
-			if ((quelle.charAt(1) == '2') || (quelle.charAt(1) == '7'))
-				ergebnis = ergebnis + (rauf(quelle, 2, richtung));
-			ergebnis = ergebnis + rechtsRauf(hilfsPosX, hilfsPosY, 1, richtung);
+			if (quelle > 30 && quelle < 39)
+				grundlinie = true;
+			else if (quelle > 80 && quelle < 89)
+				grundlinie = true;
 
-			erlaubt = ergebnis.contains(ziel);
+			if (figurfarbe) {
+				if ((ziel == quelle + 9) && (zielfarbe.contains("_s")))
+					erlaubt = true;
+				if ((ziel == quelle + 10) && (zielfarbe == ""))
+					erlaubt = true;
+				if ((ziel == quelle + 11) && (zielfarbe.contains("_s")))
+					erlaubt = true;
+			} else {
+				if ((ziel == quelle - 9) && (zielfarbe.contains("_w")))
+					erlaubt = true;
+				if ((ziel == quelle - 10) && (zielfarbe == ""))
+					erlaubt = true;
+				if ((ziel == quelle - 11) && (zielfarbe.contains("_w")))
+					erlaubt = true;
+			}
 
-			 System.out.println(ergebnis);
-			break;// 3 Richtungen 4 Felder
+			// 2Felder mehr von der Grundlinie
+			if (grundlinie && differenz == 20)
+				erlaubt = true;
+
+			break;
 		case "Turm":
-			if (quelle.charAt(1) < ziel.charAt(1)) {
-				int anzahl = 1;
-				for (int i = quelle.charAt(1); i < ziel.charAt(1); i++) {
-					ergebnis = ergebnis + rauf(quelle, anzahl++, richtung);
-				}
-				anzahl = 1;
-				for (int i = quelle.charAt(1); i < ziel.charAt(1); i++) {
-					ergebnis = ergebnis + rauf(quelle, anzahl++, !richtung);
-				}
-			}
-			if (quelle.charAt(1) > ziel.charAt(1)) {
-				int anzahl = 1;
-				for (int i = quelle.charAt(1); i > ziel.charAt(1); i--) {
-					ergebnis = ergebnis + rauf(quelle, anzahl++, richtung);
-				}
-				anzahl = 1;
-				for (int i = quelle.charAt(1); i > ziel.charAt(1); i--) {
-					ergebnis = ergebnis + rauf(quelle, anzahl++, !richtung);
-				}
-			}
-
-			erlaubt = ergebnis.contains(ziel);
-			System.out.println(ergebnis);
-			break;// 4 Richtungen
+			System.out.println("Turm " + Arrays.toString(bitboard.berechneGerade(quelle)));
+			bitboard.ausgeben(figurname, figurfarbe);
+			if (differenz % 10 == 0)
+				erlaubt = true;
+			if (Math.abs(ziel / 10 - quelle / 10) < 1)
+				erlaubt = true;
+			break;
 		case "Springer":
-			System.out.println("Springer");
-			break;// 8 Richtungen 8 Felder
-		case "Lauefer":
-			System.out.println("Lauefer");
-			break;// 4 Richtungen um 45
+			System.out.println("Springer " + Arrays.toString(bitboard.berechneSpringer(quelle)));
+			bitboard.ausgeben(figurname, figurfarbe);
+
+			/*
+			 * if (ziel == quelle + 21) erlaubt = true; if (ziel == quelle + 19) erlaubt =
+			 * true; if (ziel == quelle + 8) erlaubt = true; if (ziel == quelle + 12)
+			 * erlaubt = true; if (ziel == quelle - 21) erlaubt = true; if (ziel == quelle -
+			 * 19) erlaubt = true; if (ziel == quelle - 8) erlaubt = true; if (ziel ==
+			 * quelle - 12) erlaubt = true;
+			 */
+
+			break;
+		case "Laeufer":
+			System.out.println("Laeufer " + Arrays.toString(bitboard.berechneDiagonale(quelle)));
+			bitboard.ausgeben(figurname, figurfarbe);
+			if (differenz % 9 == 0)
+				erlaubt = true;
+			if (differenz % 11 == 0)
+				erlaubt = true;
+			break;
 		case "Dame":
-			System.out.println("Dame");
+			bitboard.berechneDame(quelle);
+			bitboard.ausgeben(figurname, figurfarbe);
+			if (differenz % 10 == 0)
+				erlaubt = true;
+			if (Math.abs(ziel / 10 - quelle / 10) < 1)
+				erlaubt = true;
+			if (differenz % 9 == 0)
+				erlaubt = true;
+			if (differenz % 11 == 0)
+				erlaubt = true;
 			break;
 		case "Koenig":
-			System.out.println("Koenig");
+			System.out.println("Koenig " + Arrays.toString(bitboard.berechneKoenig(quelle)));
+			bitboard.ausgeben(figurname, figurfarbe);
+			if (quelle + 10 == ziel)
+				erlaubt = true;
+			if (quelle - 10 == ziel)
+				erlaubt = true;
+			if (quelle + 1 == ziel)
+				erlaubt = true;
+			if (quelle - 1 == ziel)
+				erlaubt = true;
+			if (quelle + 9 == ziel)
+				erlaubt = true;
+			if (quelle - 9 == ziel)
+				erlaubt = true;
+			if (quelle + 11 == ziel)
+				erlaubt = true;
+			if (quelle - 11 == ziel)
+				erlaubt = true;
 			break;
 
 		}
+
+		if (zielfarbe.contains("_w") && figur.contains("_w"))
+			return false;
+		if (zielfarbe.contains("_s") && figur.contains("_s"))
+			return false;
 
 		return erlaubt;
 
 	}
 
-	private String rauf(String quelle, int anzahl, boolean richtung) {
-		char hilfsPosX = quelle.charAt(0);
-		int hilfsPosY = quelle.charAt(1);
-		//int ausgangsstellung = 7;
-		if (!richtung) {
-			//ausgangsstellung = 2;
-			anzahl *= -1;
-		}
-
-		String ergebnis = "";
-		// Rauf
-		//if (hilfsPosY != ausgangsstellung) {
-			hilfsPosY += anzahl - 48;
-				ergebnis = ergebnis + hilfsPosX + hilfsPosY;
-		//}
-
-		return ergebnis;
-
-	}
-
-	private String linksRauf(String quelle, int anzahl, boolean richtung) {
-		char hilfsPosX = quelle.charAt(0);
-		int hilfsPosY = quelle.charAt(1);
-		int ausgangsstellung = 7;
-		if (!richtung) {
-			ausgangsstellung = 2;
-			anzahl *= -1;
-		}
-
-		String ergebnis = "";
-		// Links rauf
-		if ((hilfsPosX != 'A')) {
-
-			hilfsPosX -= (char) Math.abs(anzahl);//
-			if (hilfsPosY != ausgangsstellung)
-				hilfsPosY += anzahl - 48;
-			ergebnis = ergebnis + hilfsPosX + hilfsPosY;
-
-		}
-
-		return ergebnis;
-
-	}
-
-	private String rechtsRauf(char hilfsPosX, int hilfsPosY, int anzahl, boolean richtung) {
-
-		int ausgangsstellung = 7;
-		if (!richtung) {
-			ausgangsstellung = 2;
-			anzahl *= -1;
-		}
-
-		String ergebnis = "";
-		// Rechts rauf
-		if ((hilfsPosX != 'H')) {
-			hilfsPosX += (char) 1;//
-			if (hilfsPosY != ausgangsstellung)
-				hilfsPosY += anzahl - 48;
-			ergebnis = ergebnis + hilfsPosX + hilfsPosY;
-		}
-
-		return ergebnis;
-
-	}
 }

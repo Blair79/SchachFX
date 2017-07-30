@@ -42,9 +42,9 @@ public class Schach extends Application {
 			// Attribute der Primary Stage werden gesetzt
 			primaryStage.setTitle("Schach");
 			primaryStage.setResizable(false);
-			
+
 			// Set the application icon.
-		    this.primaryStage.getIcons().add(new Image("file:resources/images/Chess-Game.png"));
+			this.primaryStage.getIcons().add(new Image("file:resources/images/Chess-Game.png"));
 
 			// Controller wird geladen
 			Schachbrett_controller schachbrett_controller = loader.getController();
