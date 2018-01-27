@@ -16,160 +16,373 @@ import javafx.scene.input.TransferMode;
 import javafx.scene.layout.Pane;
 import schachFX.Spiel;
 
+/**
+ * Class Schachbrett_controller
+ * 
+ * @author ColBlair
+ * @version 1.0
+ */
 public class Schachbrett_controller {
 
 	// FXML Variablen:
-	// Für die Textausgabe auf der Textarea.
+	/**
+	 * Für die Textausgabe auf der Textarea.
+	 */
 	@FXML
 	private TextArea statusAusgabe;
+	/**
+	 * Für die Textausgabe auf der Textarea.
+	 */
 	@FXML
 	private TextArea notation;
-	// Für die Textausgabe auf das jeweilige Label.
+	/**
+	 * Für die Textausgabe auf das jeweilige Label.
+	 */
 	@FXML
 	private Label startposition;
+	/**
+	 * Für die Textausgabe auf das jeweilige Label.
+	 */
 	@FXML
 	private Label position;
+	/**
+	 * Für die Textausgabe auf das jeweilige Label.
+	 */
 	@FXML
 	private Label endposition;
 
 	// Felder
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane a1;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane b1;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane c1;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane d1;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane e1;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane f1;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane g1;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane h1;
 
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane a2;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane b2;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane c2;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane d2;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane e2;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane f2;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane g2;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane h2;
 
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane a3;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane b3;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane c3;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane d3;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane e3;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane f3;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane g3;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane h3;
 
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane a4;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane b4;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane c4;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane d4;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane e4;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane f4;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane g4;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane h4;
 
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane a5;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane b5;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane c5;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane d5;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane e5;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane f5;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane g5;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane h5;
 
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane a6;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane b6;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane c6;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane d6;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane e6;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane f6;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane g6;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane h6;
 
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane a7;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane b7;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane c7;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane d7;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane e7;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane f7;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane g7;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane h7;
 
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane a8;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane b8;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane c8;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane d8;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane e8;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane f8;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane g8;
+	/**
+	 * Schachfeld
+	 */
 	@FXML
 	private Pane h8;
 
-	// Felder als Array für Offsetzugriff 1 hoch = offset+8
+	/**
+	 * Felder als Array für Offsetzugriff 1 hoch = offset+8
+	 */
 	public Pane[] gameBoard = { null, null, null, null, null, null, null, null, null, null, null, null, null, null,
 			null, null, null, null, null, null, null, null, a1, b1, c1, d1, e1, f1, g1, h1, null, null, a2, b2, c2, d2,
 			e2, f2, g2, h2, null, null, a3, b3, c3, d3, e3, f3, g3, h3, null, null, a4, b4, c4, d4, e4, f4, g4, h4,
@@ -179,49 +392,88 @@ public class Schachbrett_controller {
 
 	// Private Variablen des Controllers:
 
-	// Das Hauptfenster
+	/**
+	 * Das Hauptfenster
+	 */
 	private Schach schach;
-	// Das laufende Spiel
+	/**
+	 * Das laufende Spiel
+	 */
 	private Spiel spiel = new Spiel(this);
-	// Der wievielte Zug
+	/**
+	 * Der wievielte Zug
+	 */
 	int ZuegeAnzahl = 0;
 
-	// Die Figur mit der etwas gemacht werden soll.
+	/**
+	 * Die Figur mit der etwas gemacht werden soll.
+	 */
 	private ImageView figur = new ImageView();
 
-	// Ist der Bewegungsvorgang gestartet worden?
+	/**
+	 * Ist der Bewegungsvorgang gestartet worden?
+	 */
 	private boolean bewegeFigur = false;
 
-	// Das Feld aus dem die Figur gelöscht werden soll.
+	/**
+	 * Das Feld aus dem die Figur gelöscht werden soll.
+	 */
 	private Pane quellfeld = new Pane();
-	// Das Feld über dem sich der Bewegungsvorgang gerade befindet.
+	/**
+	 * Das Feld über dem sich der Bewegungsvorgang gerade befindet.
+	 */
 	private Pane feld = new Pane();
-	// Das Feld in das die Figur eingefügt werden soll.
+	/**
+	 * Das Feld in das die Figur eingefügt werden soll.
+	 */
 	private Pane zielfeld = new Pane();
+	/**
+	 * Das Feld in das die zu löschende Figur eingefügt werden soll.
+	 */
 	private Pane löschfeld = new Pane();
 
-	// Der Punkt von dem aus der Bewegungsvorgang gestartet wurde.
+	/**
+	 * Der Punkt von dem aus der Bewegungsvorgang gestartet wurde.
+	 */
 	private Point2D startpunkt = new Point2D(0, 0);
-	// Der Punkt über dem sich der Bewegungsvorgang gerade befindet.
+	/**
+	 * Der Punkt über dem sich der Bewegungsvorgang gerade befindet.
+	 */
 	private Point2D aktuelleposition = new Point2D(0, 0);
-	// Der Punkt an dem der Bewegungsvorgang beendet wurde.
+	/**
+	 * Der Punkt an dem der Bewegungsvorgang beendet wurde.
+	 */
 	private Point2D endpunkt = new Point2D(0, 0);
 
+	/**
+	 * @param schach
+	 */
 	public void setMain(Schach schach) {
 		this.schach = schach;
 	}
 
+	/**
+	 * 
+	 */
 	public void neuesSpiel() {
 
 		schach.mainWindow();
 		ausgabe("neues Spiel");
 	}
 
+	/**
+	 * @param ausgabeText
+	 */
 	public void ausgabe(String ausgabeText) {
 
 		statusAusgabe.appendText(ausgabeText);
 	}
 
+	/**
+	 * @param quelle
+	 * @param ziel
+	 * @param notationsText
+	 */
 	public void notiere(int quelle, int ziel, String notationsText) {
 
 		notation.appendText(++ZuegeAnzahl + ". " + notationsText + "\n");
@@ -290,7 +542,10 @@ public class Schachbrett_controller {
 	 */
 
 	// FXML Funktionen:
-	// Eine Figur bemerkt, das sie bewegt werden soll.
+	/**
+	 * Eine Figur bemerkt, das sie bewegt werden soll.
+	 * @param event
+	 */
 	@FXML
 	protected void onDragDetected(MouseEvent event) {
 
@@ -332,7 +587,10 @@ public class Schachbrett_controller {
 		// event.consume(); ??
 	}
 
-	// Ein Feld bemerkt, das eine Figur das Feld betritt.
+	/**
+	 * Ein Feld bemerkt, das eine Figur das Feld betritt.
+	 * @param event
+	 */
 	@FXML
 	protected void onDragEntered(DragEvent event) {
 
@@ -358,7 +616,10 @@ public class Schachbrett_controller {
 		// event.consume(); ??
 	}
 
-	// Ein Feld bemerkt, das eine Figur das Feld verlässt.
+	/**
+	 * Ein Feld bemerkt, das eine Figur das Feld verlässt.
+	 * @param event
+	 */
 	@FXML
 	protected void onDragExited(DragEvent event) {
 
@@ -383,7 +644,10 @@ public class Schachbrett_controller {
 		// event.consume(); ??
 	}
 
-	// Ein Feld bemerkt das eine Figur das Feld überquert.
+	/**
+	 * Ein Feld bemerkt das eine Figur das Feld überquert.
+	 * @param event
+	 */
 	@FXML
 	protected void onDragOver(DragEvent event) {
 
@@ -401,7 +665,10 @@ public class Schachbrett_controller {
 		// event.consume(); ??
 	}
 
-	// Eein Feld bemerkt, das eine Figur auf dem Feld fallen gelassen wird.
+	/**
+	 * Ein Feld bemerkt, das eine Figur auf dem Feld fallen gelassen wird.
+	 * @param event
+	 */
 	@FXML
 	protected void onDragDropped(DragEvent event) {
 
@@ -427,7 +694,7 @@ public class Schachbrett_controller {
 			int ziel = Integer.parseInt(zielfeld.getId());
 
 			// 0=leeres feld, 1=schlagen, -1=Figur eigener Farbe
-			String quellfarbe = figur.getId().substring(figur.getId().indexOf('_'), figur.getId().length() - 1);
+			//String quellfarbe = figur.getId().substring(figur.getId().indexOf('_'), figur.getId().length() - 1);
 			String zielfarbe = "";
 
 			if (!zielfeld.getChildren().isEmpty())
@@ -457,7 +724,10 @@ public class Schachbrett_controller {
 		// event.consume(); ??
 	}
 
-	// Abschließende Arbeiten nach Bewegung der Figur ins Zielfeld.
+	/**
+	 * Abschließende Arbeiten nach Bewegung der Figur ins Zielfeld.
+	 * @param event
+	 */
 	@FXML
 	protected void onDragDone(DragEvent event) {
 

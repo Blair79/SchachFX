@@ -1,17 +1,35 @@
 package schachFX;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.BitSet;
 
+/**
+ * Class Spiel
+ * 
+ * @author ColBlair
+ * @version 1.0
+ */
 public class Spiel {
+	/**
+	 * Controller
+	 */
+	@SuppressWarnings("unused")
 	private Schachbrett_controller schachbrett_controller;
+	/**
+	 * Bitboard
+	 */
 	private BitBoard bitboard = new BitBoard();
 
+	/**
+	 * @param schachbrett_controller
+	 */
 	public Spiel(Schachbrett_controller schachbrett_controller) {
 		this.schachbrett_controller = schachbrett_controller;
 	}
 
+	/**
+	 * @param quelle
+	 * @param ziel
+	 */
 	public void notiere(int quelle, int ziel) {
 		// TODO Speichern der Notation
 		// System.out.println(quelle+","+ziel);
@@ -22,6 +40,13 @@ public class Spiel {
 	 * schachbrett_controller.ziehe(quelle, ziel); }
 	 */
 
+	/**
+	 * @param figur
+	 * @param zielfarbe
+	 * @param quelle
+	 * @param ziel
+	 * @return erlaubt
+	 */
 	public boolean istZugerlaubt(String figur, String zielfarbe, int quelle, int ziel) {
 
 		System.out.println(figur + " " + quelle + " " + ziel + " " + zielfarbe);
@@ -87,7 +112,7 @@ public class Spiel {
 
 			break;
 		case "Laeufer":
-			System.out.println("Laeufer " + Arrays.toString(bitboard.berechneDiagonale(quelle)));
+			System.out.println("Laeufer " + Arrays.toString(bitboard.berechneGerade(quelle)));
 			bitboard.ausgeben(figurname, figurfarbe);
 			if (differenz % 9 == 0)
 				erlaubt = true;
@@ -95,7 +120,7 @@ public class Spiel {
 				erlaubt = true;
 			break;
 		case "Dame":
-			bitboard.berechneDame(quelle);
+			bitboard.berechneGerade(quelle);
 			bitboard.ausgeben(figurname, figurfarbe);
 			if (differenz % 10 == 0)
 				erlaubt = true;
